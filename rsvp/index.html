@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Kyle & Tara</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload-0 is-preload-1">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Home -->
+		<article id="home" class="panel special">
+			<div class="image">
+				<img src="images/Main.jpg" alt="" data-position="center center" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<header>
+						<h1>Kyle & Tara</h1>
+						<p>July 13th, 2024<br />
+							Wedding Reception - RSVP</p>
+						<p style="font-size: 10px; font-weight: bold; margin-top: 1em;">Please Note: We are unable to
+							accommodate
+							additional guests</p>
+					</header>
+					<div class="inner">
+						<form method="post" action="https://formspree.io/f/mbjngvnl">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name(s)</label>
+									<input type="text" name="name" id="name" required />
+								</div>
+								<div class="field">
+									<label for="message">Note (Optional)</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+								<div class="field half">
+									<input type="checkbox" id="yes-response" name="yes-response" value="attending">
+									<label for="yes-response">Count me in!</label>
+								</div>
+								<div class="field half">
+									<input type="checkbox" id="no-response" name="no-response" value="can't make it">
+									<label for="no-response">Can't make it</label>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="RSVP" /></li>
+							</ul>
+						</form>
+						<ul class="actions">
+							<li><a href="../index.html" class="button submit">Return To Homepage</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<script>
+			const yesCheckbox = document.getElementById('yes-response');
+			const noCheckbox = document.getElementById('no-response');
+
+			yesCheckbox.addEventListener('change', function () {
+				if (this.checked) {
+					noCheckbox.checked = false;
+				}
+			});
+
+			noCheckbox.addEventListener('change', function () {
+				if (this.checked) {
+					yesCheckbox.checked = false;
+				}
+			});
+		</script>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright"><a href="https://www.webundefined.com/">&copy; Web Undefined, LLC</a></p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

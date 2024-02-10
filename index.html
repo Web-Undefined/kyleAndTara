@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Kyle & Tara</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload-0 is-preload-1">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Home -->
+		<article id="home" class="panel special">
+			<div class="image">
+				<img src="images/Main.jpg" alt="" data-position="center center" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<header>
+						<h1>Kyle & Tara</h1>
+						<p>July 13th, 2024<br />
+							Wedding Reception</p>
+					</header>
+					<nav id="nav">
+						<ul class="actions stacked special animated spinY">
+							<li><a href="#rsvp" class="button">RSVP</a></li>
+							<li><a href="#details" class="button">Details</a></li>
+							<li><a href="#directions" class="button">Directions</a></li>
+							<li><a href="#" class="button">Photos</a></li>
+							<li><a href="#" class="button">Registry</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</article>
+
+		<!-- RSVP -->
+		<article id="rsvp" class="panel secondary">
+			<div class="image">
+				<img src="images/3.jpg" alt="" data-position="center center" />
+			</div>
+			<div class="content">
+				<ul class="actions animated spinX">
+					<li><a href="#" class="button small back">Back</a></li>
+				</ul>
+				<div class="inner">
+					<header>
+						<h1>Kyle & Tara</h1>
+						<p>July 13th, 2024<br />
+							Wedding Reception - RSVP</p>
+						<p style="font-size: 10px; font-weight: bold; margin-top: 1em;">Please Note: We are unable to
+							accommodate
+							additional guests</p>
+					</header>
+					<div class="inner">
+						<form method="post" action="https://formspree.io/f/mbjngvnl">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name(s)</label>
+									<input type="text" name="name" id="name" required />
+								</div>
+								<div class="field">
+									<label for="message">Note (Optional)</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+								<div class="field half">
+									<input type="checkbox" id="yes-response" name="yes-response" value="attending">
+									<label for="yes-response">Count me in!</label>
+								</div>
+								<div class="field half">
+									<input type="checkbox" id="no-response" name="no-response" value="can't make it">
+									<label for="no-response">Can't make it</label>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="RSVP" /></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<script>
+			const yesCheckbox = document.getElementById('yes-response');
+			const noCheckbox = document.getElementById('no-response');
+
+			yesCheckbox.addEventListener('change', function () {
+				if (this.checked) {
+					noCheckbox.checked = false;
+				}
+			});
+
+			noCheckbox.addEventListener('change', function () {
+				if (this.checked) {
+					yesCheckbox.checked = false;
+				}
+			});
+		</script>
+
+		<!-- Details -->
+		<article id="details" class="panel secondary">
+			<div class="image">
+				<img src="images/1.jpg" alt="" data-position="center center" />
+			</div>
+			<div class="content">
+				<ul class="actions animated spinX">
+					<li><a href="#" class="button small back">Back</a></li>
+				</ul>
+				<div class="inner">
+					<header>
+						<h2>Details</h2>
+						<p>Saturday July 13th, 2024<br />
+							5:00PM - 9:00PM<br />
+							<a href="https://www.huntinghousehopyard.com/">Huntinghouse
+								Hopyard</a>
+						</p>
+					</header>
+					<p>We decided to have a private and intimate ceremony near our home in San Diego. We are thrilled to
+						celebrate our marriage with you all at the hopyard.</p>
+					<p>
+						At our wedding reception, cocktail attire sets the scene for an evening of
+						love and laughter! Expect delicious food, lively music, and karaoke fun. Please note, our farm
+						venue has gravel and sand, so comfortable footwear is advised. Let's make memories under the
+						stars!</p>
+					<p>Keep in mind this event is adults only!<br />
+						<b style="font-weight: bold;">Please</b> carpool if possible as parking is limited!
+					</p>
+				</div>
+			</div>
+		</article>
+
+		<!-- Directions -->
+		<article id="directions" class="panel secondary">
+			<div class="image">
+				<img src="images/4.jpg" alt="" data-position="bottom center" />
+			</div>
+			<div class="content">
+				<ul class="actions animated spinX">
+					<li><a href="#" class="button small back">Back</a></li>
+				</ul>
+				<div class="inner">
+					<header>
+						<h2>Directions</h2>
+					</header>
+					<p><b style="font-weight: bold;">Please</b> carpool if possible as parking is limited!</p>
+					<p><a
+							href="https://www.google.com/maps/place/HuntingHouse+HopYard/@41.864098,-71.646672,15z/data=!4m14!1m7!3m6!1s0x89e4397d2019353b:0x70a3b5244d1172cc!2sHuntingHouse+HopYard!8m2!3d41.864098!4d-71.646672!16s%2Fg%2F11h51c80_c!3m5!1s0x89e4397d2019353b:0x70a3b5244d1172cc!8m2!3d41.864098!4d-71.646672!16s%2Fg%2F11h51c80_c?entry=ttu">242
+							Huntinghouse Road, North Scituate, RI</a></p>
+					<div class="map-responsive">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11885.347506163856!2d-71.646672!3d41.864098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4397d2019353b%3A0x70a3b5244d1172cc!2sHuntingHouse%20HopYard!5e0!3m2!1sen!2sus!4v1707537932251!5m2!1sen!2sus"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright"><a href="https://www.webundefined.com/">&copy; Web Undefined, LLC</a></p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
