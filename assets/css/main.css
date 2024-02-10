@@ -1695,3 +1695,7 @@ body.is-preload-0 #footer {
     width: 100%;
     position: absolute;
 }
+
+br {
+    display: block !important;
+}
